@@ -32,7 +32,6 @@ public class RestData {
 		return response;
 	}
 	
-	
 	@GetMapping(path = "/estadoPais", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Pais getTotalPais(@RequestParam(name = "pais") String message){
 		RestTemplate restTemplate = new RestTemplate();
